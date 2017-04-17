@@ -3,15 +3,15 @@
 	$errors = array();
 	session_start();
 	if(isset($data['do_login'])){
-		if($data['login'] == 'admin' && $data['password'] == 'root'){
+		if($data['login'] == '$vxod157953' && $data['password'] == '$vxod157953$vxod157953'){
 		$_SESSION['user'] = $data['login'];
 		}else{
             $errors[] = 'Пользователь с таким логином не найден!';
         }
-	   }
+	}
     if(isset($_SESSION['user'])){    
-        header('Location: main.php');
-		    die();
+        include("main.php");  
+		die();
 	}
 	if( ! empty($errors) )
 	{
@@ -23,7 +23,7 @@
 <head>
   <title> Админ панель </title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../css/log.css">
+  <link rel="stylesheet" type="text/css" href="css/log.css">
 </head>
 <body style="margin:0px;">
 <div class="hheader" style="background-color:#2C2C2C;width:100%; height:60px; margin:0px; ">
@@ -40,3 +40,4 @@
     </form>
   </div>
 </body>
+</html>

@@ -1,0 +1,228 @@
+body,li,ul,h1{
+  margin:0px;
+  padding: 0px;
+}
+body{
+  position: relative;
+    font-size: 10px;
+    background-color: #f2f2f2;
+    font-family: GothamRounded;
+}
+header{
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  background-color: #3a464b;
+  border-color: #e7e7e7;
+  margin:0px;
+  padding: 0px;
+}
+header img{
+  width: 260px;
+  height: 80px;
+  float:left;
+}
+header li{
+  list-style: none;
+  float:left;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-left: 20px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.signin{
+  display: block;
+  overflow: hidden;
+  width: 300px !important;
+  height: 290px !important;
+  float: left;
+}
+
+.regaction{
+  margin-top: 30px;
+}
+.signin>div>input[type=submit]{
+  background-color: #1abc9c;
+  border: medium none;
+  border-radius: 10px;
+  color: #fff;
+  margin:0px;
+  font-weight: 500;
+  font-size: 1.7em;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  width: 130px;
+  margin-left: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.signin>div>input[type=button]{
+  border: medium none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.7em;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  width: 130px;
+  margin:0px;
+  color: #333;
+  background: #aaa;
+  float: left;
+  cursor: pointer;
+}
+
+/* login title */
+.signin h1{
+  color: #777;
+  font-weight: 300;
+  font-size: 40px;
+  padding: 0px;
+
+}
+
+.signin input{
+  width: 80%;
+  height: 40px;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: none;
+  border-right: none;
+  border-left:none;
+  border-bottom: 1px solid #757575;
+  outline: none;
+}
+.contentbox{
+  margin-left: 50px;
+  display: block;
+  width: 40%;
+  background-color: #fff;
+  border-left: 1px solid #dfdfdf;
+  border-right:  1px solid #dfdfdf;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+}
+.fluid{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainblock{
+  display: block;
+  padding-top: 60px;
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/bg.jpg');
+  background-size: 100% 100%;
+}
+.footer{
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  background-color: #3a464b;
+  border-color: #e7e7e7;
+  margin:0px;
+  padding: 0px;
+}
+.footer>h3{
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  font-size: 23px;
+}
+.fulldiv{
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.signup{
+    margin-right: auto;
+    margin-left:  auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    width: 300px !important;
+    height: 490px !important;
+
+}
+.signup>div>input[type=submit]{
+  background-color: #1abc9c;
+  border: medium none;
+  border-radius: 10px;
+  color: #fff;
+  margin:0px auto;
+  font-weight: 500;
+  font-size: 1.7em;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  width: 200px;
+  margin-left: 30px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* login title */
+.signup h1{
+  color: #777;
+  font-weight: 300;
+  font-size: 40px;
+  padding: 0px;
+
+}
+.signup>i{
+  float: right;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.signup input{
+  width: 80%;
+  height: 40px;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: none;
+  border-right: none;
+  border-left:none;
+  border-bottom: 1px solid #757575;
+  outline: none;
+}
+.signup>.fa{
+    font-size: 2em;
+    float: right;
+    margin-top: -20px;
+}
+.fa-check{
+  color: green;
+}
+.fa-times{
+  color: red;
+}

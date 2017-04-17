@@ -1,0 +1,153 @@
+body{
+	margin:0px;
+	padding: 0px;
+}
+.header-wrapper{
+	padding-right: 10%;
+	padding-left: 10%;
+	background: #2C3E50;
+}
+.panel{
+	height: 60px;
+    font-size: 160%;
+    background: #2C3E50;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.panel>ul>li{
+	float:left;
+	list-style: none;
+	line-height: 60px;
+	margin-left: 40px;
+	font-size: 18px;
+	background-color: #2C3E50;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.panel>ul>li>a{
+	color: white;
+	text-decoration: none;
+}
+.panel>ul{
+	margin:0px;
+}
+#tinymce,#options{
+	width: 48%;
+	margin-top: 20px;
+	margin-left:  2%;
+	float: left;
+	
+}
+.mce{
+	height: 100px;
+}
+
+.panel-header{
+	width: 100%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	display: inline-block;
+    padding: 10px 0px 8px 0px;
+    font-size: 120%;
+    color: #FFFFFF;
+    background: #009788;
+}
+
+.selectbig{
+	width: 90%;
+	height: 40px;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+.selectsmall{
+	margin-left: 5%;
+	margin-top: 10px;
+}
+.options span{
+	display: inline-block;
+	margin-left: 5%;
+}
+
+.res-panel{
+	background-color:#52ADC8 !important;
+}
+.acc-panel{
+	background-color:#2574AB !important;
+}
+.mon-panel{
+	background-color:#D9534F !important;
+}
+.add-panel{
+	background-color:#505B72 !important;
+}
+.war-panel{
+	background-color:#E6AD5C !important;
+}
+
+#save{
+
+	display: table;
+	width: 90px;
+	margin: 0px auto;
+}
+.questionsblock{
+	display: block;
+	width: 80%;
+	margin:0px 10%;
+	float: right;
+	margin-bottom: 50px;
+}
+
+.mid-wrapper{
+	width: 400px;
+	margin:50px auto;
+	height: 280px;
+}
+.head{
+	padding: 0px;
+	margin-top: 0px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #5F5F5F;
+	height: 50px;
+	color: white;
+	line-height: 50px;
+}
+.mid-wrapper>form>input{
+	width: 300px;
+	height: 40px;
+	display: table;
+	margin:20px auto;
+}
+
+.mid-wrapper {
+    position: relative;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    background: white;
+}
+
+/* Make the image fit the box */
+.mid-wrapper img {
+    width: 100%;
+    border: 1px solid #8a4419;
+    border-style: inset;
+}
+
+.mid-wrapper::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
+    width: 70%; 
+    left: 15%; /* one half of the remaining 30% */
+    height: 100px;
+    bottom: 0;
+}
+			
+
