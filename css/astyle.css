@@ -1,16 +1,25 @@
 body{
 	margin:0px;
 	padding: 0px;
+	background: #E9EBEE;
 }
 .header-wrapper{
 	padding-right: 10%;
 	padding-left: 10%;
-	background: #2C3E50;
+	background: #375A90;
+}
+.panel>span{
+	padding-top: 15px;
+	display: block;
+	float: left;
+}
+#log{
+	float: right;
 }
 .panel{
-	height: 60px;
+	height: 84px;
     font-size: 160%;
-    background: #2C3E50;
+    background: #375A90;
     color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
@@ -18,24 +27,28 @@ body{
 .panel>ul>li{
 	float:left;
 	list-style: none;
-	line-height: 60px;
-	margin-left: 40px;
+	line-height: 30px;
+	margin-right: 4px;
 	font-size: 18px;
-	background-color: #2C3E50;
+	background-color: #809ECD;
+	margin-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 }
+
 .panel>ul>li>a{
 	color: white;
 	text-decoration: none;
 }
 .panel>ul{
+	clear: both;
 	margin:0px;
+	padding: 0px;
 }
-#tinymce,#options{
-	width: 48%;
+.tinymce,#options{
+	width: 45%;
 	margin-top: 20px;
-	margin-left:  2%;
+	margin-left:  3%;
 	float: left;
 	
 }
@@ -51,8 +64,12 @@ body{
 	display: inline-block;
     padding: 10px 0px 8px 0px;
     font-size: 120%;
-    color: #FFFFFF;
-    background: #009788;
+    color: #365899;;
+    background: #F6F7F9;
+    border-top:1px solid #ced0d4;
+    border-left:1px solid #ced0d4;
+    border-right:1px solid #ced0d4;
+    border-radius: 3px 3px 0px 0px;
 }
 
 .selectbig{
@@ -68,6 +85,10 @@ body{
 .options span{
 	display: inline-block;
 	margin-left: 5%;
+}
+.options{
+	border:1px solid #ced0d4;
+	height: 142px;
 }
 
 .res-panel{
@@ -97,20 +118,36 @@ body{
 	width: 80%;
 	margin:0px 10%;
 	float: right;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
+	background: #FEFEFE;
+}
+.area-wrapper{
+	display: block;
+	width: 80%;
+	margin:0px 10%;
+	float: right;
+	padding-bottom: 50px;
+	background: #FEFEFE;
+}
+
+#corans2{
+	display: none;
+	margin-top: 5px;
+	margin-left: 18px;
+	width: 50%;
 }
 
 .mid-wrapper{
 	width: 400px;
 	margin:50px auto;
-	height: 280px;
+	min-height: 280px;
 }
 .head{
 	padding: 0px;
 	margin-top: 0px;
 	font-size: 20px;
 	text-align: center;
-	background-color: #5F5F5F;
+	background-color: #809ECD;
 	height: 50px;
 	color: white;
 	line-height: 50px;
@@ -149,5 +186,98 @@ body{
     height: 100px;
     bottom: 0;
 }
-			
 
+#save{
+	color: #fff;
+    background-color: #5cb85c;
+    display: block;
+    padding: 6px 12px;
+    margin: 0px auto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.footer{
+	clear: both;
+	display: block;
+	height: 50px;
+	width: 100%;
+	background: #375A90;
+}		
+
+.footer>span{
+	color: white;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+}
+.course-items>p{
+	background-color: #F6F7F9;
+	border: 1px solid #ced0d4;
+	margin-top: 5px;
+	padding-left: 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #365899;
+}
+.course-items>p>i{
+	float: right;
+	font-size: 18px;
+	line-height: 40px;
+	margin-right: 10px;
+}
+
+.items-header{
+	height: 50px;
+	background-color: #809ECD;
+	color: white;
+	text-align: center;	
+	line-height: 50px;
+	font-size: 19px;
+}
+
+#logout{
+	clear: both;
+	display: inline-block;
+	text-align: right;
+	color: white;
+	text-decoration: none;
+}
+.profilemenu{
+	position: absolute;
+	background-color: #809ECD;
+	margin:0px;
+	padding: 0px;
+	border: 1px solid white;
+	text-align: center;
+	display: none;
+}
+.profilemenu>li{
+	list-style: none;
+	color: white;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+.fa-angle-down{
+	cursor: pointer;
+}
+
+#profileedit{
+  display: none;
+  width: 100%;
+  height: 117%;
+  position: absolute ;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#profileedit>div>h1>i{
+	position: absolute;
+	float: right;
+	color: black;
+	right: 10px;
+	padding-top: 15px; 
+	cursor: pointer;
+}

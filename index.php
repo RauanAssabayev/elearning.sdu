@@ -3,7 +3,7 @@ require "db.php";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST['login'])){
     	$loginsql = "select * from users where email = '".$_POST['email']."'
-		and password = '".md5($_POST['password'])."' ;";
+		and password = '".md5($_POST['password'])."' ";
 		$user = R::getAll($loginsql);
 	    if($user){
 	    	session_start();
@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 			$users->name 			= $_POST['name'];
 			$users->surname 		= $_POST['surname'];
 			$users->email 			= $_POST['email'];
-			$users->password 		= md5($_POST['password']);
+			$users->password 		= md5($_POST['pass']);
 			R::store($users);
 			header('Location: passquiz.php');
 		}
@@ -41,6 +41,7 @@ function test_input($data) {
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
+	<link href="img/favicon.ico" type="image/ico" rel="icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -78,7 +79,7 @@ function test_input($data) {
 	<div class="signup contentbox">
 		<i class="fa fa-window-close-o" aria-hidden="true"></i>
 		<h1>Sign UP</h1>
-		<input type="text" required pattern="[A-Za-z]{3}" name="name" placeholder="NAME">
+		<input type="text" required name="name" placeholder="NAME">
 		<input type="text" required name="surname" placeholder="SURNAME">
 		<input type="text" required name="email" placeholder="EMAIL">
 		<input type="password" name="pass" id="password"  placeholder="PASSWORD">

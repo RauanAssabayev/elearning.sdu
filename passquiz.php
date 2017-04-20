@@ -27,5 +27,15 @@ session_start();
 	</ul>
 </div>
 </header>	
+<div class="main-wrapper">
+	<div class="mid-content">
+		
+	</div>
+	<div class="profile">
+		<img src="img/2551505.jpg" alt="user">
+		<p> <?=$_SESSION['email']?> </p>
+	</div>
+</div>
+
 </body>
 </html>

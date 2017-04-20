@@ -25,13 +25,11 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../css/log.css">
 </head>
-<body style="margin:0px;">
-<div class="hheader" style="background-color:#2C2C2C;width:100%; height:60px; margin:0px; ">
-<span style=" width:100px; height: 30px;color:white; margin-left:20px;position:absolute; padding-top:15px;font-style: italic;"> Admin page </span>
-<a style="float:right; color:white; margin-right:30px; text-decoration:none; padding-top:15px;" href="admin.php"> Log OUT </a>
+<body style="margin:0px; background-color: #E9EBEE;;">
+<div class="hheader" style="background-color:#375A90;;width:100%; height:60px; margin:0px; ">
+<span style=" width:100px; font-size: 20px; height: 30px;color:white; margin-left:20px;position:absolute; padding-top:15px;font-style: italic;"> Admin page </span>
 </div>
   <div class="login">
-    <div class="login-triangle"></div>
     <h2 class="login-header">Log in</h2>
     <form class="login-container" action="" method="post">
       <p><input name="login" type="text" placeholder="Login"></p>

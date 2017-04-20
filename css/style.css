@@ -5,8 +5,9 @@ body,li,ul,h1{
 body{
   position: relative;
     font-size: 10px;
-    background-color: #f2f2f2;
+    background-color: #3B3B3B;
     font-family: GothamRounded;
+    height: 100%;
 }
 header{
   width: 100%;
@@ -16,6 +17,7 @@ header{
   border-color: #e7e7e7;
   margin:0px;
   padding: 0px;
+  position: fixed;
 }
 header img{
   width: 260px;
@@ -226,3 +228,32 @@ header li{
 .fa-times{
   color: red;
 }
+.main-wrapper{
+  padding-top: 80px;
+}
+.mid-content{
+  width: 50%;
+
+  background-color: #f2f2f2;
+  min-height: 500px;
+  margin:0px 0px 0px 25%;
+  display: inline-block;
+  float: left;
+  
+}
+.profile{
+  display: inline-block;
+  color: white;
+  width: 282px;
+  height: 120px;
+  background-color: rgba(78,78,78,1);
+}
+.profile img{
+  width: 75px;
+  height: 75px;
+  margin-top: 22px;
+  border-radius: 50%;
+  margin-left: 5px;
+  float: left;
+}
+
