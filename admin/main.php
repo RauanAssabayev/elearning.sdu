@@ -13,7 +13,7 @@
 					$ftitle = $rows[0]['title'];
 
 					foreach ($rows as  $row) {
-						echo "<option id='".$row['number']."'>".$row['title']." </option> \n";
+						echo "<option  name='".$row['id']."' id='".$row['number']."'>".$row['title']." </option> \n";
 					}
 				?>		
 
@@ -142,7 +142,7 @@
 		   	$.post("../php/main.php",
 		        {
 		          action: "getques",
-		          title: $('#selectcourse option:selected').text(),
+		          cid: $('#selectcourse option:selected').attr("name"),
 		          number: $('#curgues option:selected').text()
 		        },
 		        function(data,status){
@@ -238,7 +238,8 @@
 
 
 		$('#save').click(function() {
-			var t = $('#selectcourse option:selected').text();
+			var cid = $('#selectcourse option:selected').attr("name");
+			console.log(cid);
 			var n = $('#curgues option:selected').text();
 			var tq = $('#typeques').val();
 			var cr = $('#corans').val();
@@ -253,7 +254,7 @@
 			$.post("../php/main.php",
 		        {
 		          action: "addques",
-		          title: t,
+		          cid: cid,
 		          number: n,
 		          type: tq,
 		          correct: cr,

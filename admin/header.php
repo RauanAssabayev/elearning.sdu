@@ -77,6 +77,7 @@
 			<li id="menu1"><a href="main.php"> Изменить вопрос </a></li>
 			<li id="menu2"><a href="add.php">  Добавить курс </a></li>
 			<li id="menu3"><a href="del.php">  Удалить курс </a></li>
+			<li id="menu5"><a href="article.php">  Добавить статью </a></li>
 			<li id="menu4"><a href="stats.php">  Статистика </a></li>
 		</ul>
 		</header>

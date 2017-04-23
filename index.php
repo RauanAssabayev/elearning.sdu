@@ -1,4 +1,9 @@
 <?
+
+
+
+
+
 require "db.php";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST['login'])){
@@ -35,7 +40,6 @@ function test_input($data) {
 ?>
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -51,12 +55,12 @@ function test_input($data) {
 <header>
 <div class="fluid">
 	<img src="img/login.png"> 
-	<ul>
-		<li>Home</li>
-		<li> ПОДГОТОВКА</li>
-		<li>Обучающие статьи</li>
-		<li>Тесты</li>
-		<li>Ответы</li>
+		<ul>
+		<li><a href="passquiz.php"> Главная </a> </li>
+		<li><a href="passquiz.php"> Подготовка </a> </li>
+		<li><a href="articles.php"> Обучающие статьи </a> </li>
+		<li><a href="passquiz.php"> Тесты </a> </li>
+		<li><a href="passquiz.php"> Ответы </a></li>
 	</ul>
 </div>
 </header>
@@ -125,7 +129,5 @@ $(document).ready(function(){
 });
 
 </script>
-
-
 </body>
 </html>
